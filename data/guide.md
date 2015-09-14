@@ -44,7 +44,7 @@ We can’t wait to #teachtheweb with you!
 
 ### I.A. Review the Mozilla Club Fact Sheet.
 
-**Mozilla Club meets regularly in-person to learn how to read, write and participate with the web in an inclusive and engaging way.**
+** Mozilla Club meets regularly in-person to learn how to read, write and participate with the web in an inclusive and engaging way.**
 
 * *Why run a Mozilla Club:*
 
@@ -140,13 +140,9 @@ II.A. Name your club and find a team.
 
 Your club is yours to design. Once you have submitted your pledge and agreed to follow the guidelines outlined in part I of this document, it’s time to give your club a brand.
 
-We encourage/invite you to use the Mozilla brand provided you [follow the guidelines set forth here](https://www.mozilla.org/en-US/styleguide/identity/mozilla/branding/). The Mozilla brand helps identify your club as part of our global network and mission.
+The Mozilla brand helps identify your club as part of our global network and mission.
 
-* **Naming**. You may, but are not required to, use the name "Mozilla Clubs" in your club’s name. Further identify your club by your location, region, group or interests. Here are the names of some current clubs: Mozilla Club Rio, Mozilla Club Jahangirnagar University, Cikarang Mozilla Club, Mozilla Club for the Chicago Librarians.
-
-* **Logo**. While standalone uses of the "Mozilla" and “Mozilla Clubs” wordmarks are limited to what is permitted under the[ Mozilla Trademark Policy](https://www.mozilla.org/en-US/foundation/trademarks/policy/), we welcome you to[ use this template to create a logo](https://sabby.makes.org/thimble/NzYxNzkwOTc2/mozilla-clubs-wordmark) for your club that incorporates these wordmarks.
-
-* Review the [remaining Mozilla Club guidelines](https://docs.google.com/a/mozilla.com/document/d/1uBQRcq_QKjn4EWkcmUd-zCC4Qfr4LMebj1Fg2hB-qoU/edit?usp=sharing) for domain names, websites, references, mission and more.
+* Follow [the guidelines set forth here](https://docs.google.com/a/mozilla.com/document/d/1uBQRcq_QKjn4EWkcmUd-zCC4Qfr4LMebj1Fg2hB-qoU/edit?usp=sharing) for naming and branding your club including what to name your club, create a domain, develop a logo, determine a mission and much more.
 
 ### Find a team
 
@@ -172,11 +168,11 @@ What’s a club with no learners? Now that you have a stellar team ready to teac
 
 * **Create a sign-up page**. Your club can be either drop-in or registration, but make sure there is an effective way for individuals to indicate attendance and get access to regular event info. [Eventbrite](http://www.eventbrite.com/) or [Google Forms](http://www.google.com/forms/about/) are good spots to gather information and follow up with potential attendees. Having a rough idea of how many learners will attend will give you a better idea of how to prepare stations, materials and mentors.
 
-* **Print Material. **Don’t underestimate the power of a good old fashioned poster that tells the details of your club. Make sure they stand out so they catch the attention of passers-by. You can post them at bus stops, schools, local coffee shops, libraries, community centers and anywhere else that makes sense in your location.
+* **Print Material**. Don’t underestimate the power of a good old fashioned poster that tells the details of your club. Make sure they stand out so they catch the attention of passers-by. You can post them at bus stops, schools, local coffee shops, libraries, community centers and anywhere else that makes sense in your location.
 
 * **Community boards and mailing lists.** Find places where the local community is talking and sharing about upcoming opportunities. These can even take the form of community groups on Twitter and Facebook. Ask members to help share the club within their networks.
 
-* **Word of Mouth. **Your friends and family are a powerful network. If they don’t know someone, they might know someone who knows someone. Spread the word far and wide at the next event, function, office or place you go to.
+* **Word of Mouth**. Your friends and family are a powerful network. If they don’t know someone, they might know someone who knows someone. Spread the word far and wide at the next event, function, office or place you go to.
 
 * **Blog.** Share your experience running a club on your blog, or even write a guest post on other relevant blogs. If you’re looking for somewhere to start, join the community [on Discourse](http://discourse.webmaker.org/category/clubs) where you can publish posts and connect to educators around the world.
 
@@ -186,7 +182,7 @@ A club should be a place that learners feel welcomed and inspired. Creating a sa
 
 * Clubs must meet in public places such as a coffee shop, schools, community centers or library community room.
 
-* **Before the event.** When sharing information or promoting the event include all information on where the event will be held and who will be present. Share background information on yourself and other club volunteers so learners and their families know who is running the event. Let club members know how to contact you and whether you want to be advised if they will not be able to attend one of the meetings. If any minors should wish to attend your event, you should have their parents or legal guardians also attend or get their formal consent in their child’s participation. Any participant under the age of 13 must be accompanied by a parent or legal guardian. There may be specific data protections, especially for minors, in your region. Make sure you are aware of and comply with any such laws and regulations. You may not photograph, video or audiorecord attendees without their expressed permission, or, for minors, without express parental consent. (Please note that certain kinds of photographing, audiotaping, and videotaping of particular age groups may be prohibited by law in certain countries.)
+* **Before the event.** When sharing information or promoting the event include all information on where the event will be held and who will be present. Share know who is running the event. If any minors should wish to attend your event, you should have their parents or legal guardians also attend or get their formal consent in their child’s participation. Any participant under the age of 13 must be accompanied by a parent or legal guardian. There may be specific data protections, especially for minorbackground information on yourself and other club volunteers so learners and their families s, in your region. Make sure you are aware of and comply with any such laws and regulations. You may not photograph, video or audiorecord attendees without their express permission, or, for minors, without express parental consent. (Please note that certain kinds of photographing, audiotaping, and videotaping of particular age groups may be prohibited by law in certain countries.)
 
 * **During the event.** Upon arrival, inform learners about the space and anything they need to know that would make them feel more comfortable, such as the location of the emergency exits, the bathroom, etc. Learners should be informed that if at any point they feel frustrated, scared or blocked from completing their work they should approach an appropriate organizer. If they have any concerns about the club and its practices that cannot be addressed by an organizer, they should email [teachtheweb@mozillafoundation.org](mailto:teachtheweb@mozillafoundation.org) directly.
 
@@ -286,6 +282,8 @@ Is there a resource you want to see included here, or something you made that yo
 I understand that:
 
 A Mozilla Club is a unique and sustainable way to teach the Web. It focuses on regular, in-person meetings with learning tailored to the needs and opportunities of my local community. It harnesses the Web as a unique public resource to learn and grow.
+
+
 
 As a Mozilla Club Captain, I pledge to:
 
