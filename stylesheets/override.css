@@ -1,0 +1,65 @@
+
+nav.top-bar {
+    background-color: #C13832;
+}
+
+section.top-bar-section ul li a {
+    background-color: #C13832 !important;
+}
+
+#guide {
+    padding-top: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-opensans h1,
+.text-opensans h2,
+.text-opensans h3,
+.text-opensans p,
+.text-opensans ul,
+.text-opensans li,
+.text-opensans a {
+     font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.text-droidsans h1,
+.text-droidsans h2,
+.text-droidsans h3,
+.text-droidsans p,
+.text-droidsans ul,
+.text-droidsans li,
+.text-droidsans a {
+    font-family: 'Droid Sans', sans-serif !important;
+}
+
+.text-firasans h1,
+.text-firasans h2,
+.text-firasans h3,
+.text-firasans p,
+.text-firasans ul,
+.text-firasans li,
+.text-firasans a {
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+
+.text-times h1,
+.text-times h2,
+.text-times h3,
+.text-times p,
+.text-times ul,
+.text-times li,
+.text-times a {
+    font-family: 'Times New Roman', serif !important;
+}
+
+
+.text-large p {
+    font-size: 1.5em;
+}
+
+.text-small p {
+    font-size: 0.75em;
+}

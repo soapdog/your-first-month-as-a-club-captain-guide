@@ -82,7 +82,7 @@ We can’t wait to #teachtheweb with you!
 
     * Report-back on events and attend regular meetings with Regional Coordinator
 
-## Read more:
+** Read more:**
 
 * [Mozilla Club fact sheet](http://mozilla.github.io/learning-networks/clubs/)
 

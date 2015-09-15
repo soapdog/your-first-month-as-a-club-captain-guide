@@ -3,24 +3,39 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="stylesheets/styles.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/print.css" media="print">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Fira+Sans:400,300,300italic,400italic,500,700|Open+Sans:400,300,300italic,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="stylesheets/override.css"/>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.3.1/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
 
     <title>Your First Month as a Club Captain</title>
 
     <!-- Handlebars Templates -->
 
     <script id="guide-template" type="text/x-handlebars-template">
-      <div class="row">
-        <div class="col-md-12">
-        {{{content}}}
+        <div class="row">
+            <div class="col-md-12">
+                {{{content}}}
+            </div>
         </div>
-      </div>
+    </script>
+
+    <script id="toc-template" type="text/x-handlebars-template">
+        {{#each this}}
+        {{#matchTag "H1,H2,H3"}}
+        <li><a href="#{{id}}">{{text}}</a></li>
+        {{/matchTag}}
+        {{/each}}
     </script>
 
 
@@ -28,83 +43,71 @@
 
 </head>
 
-<body data-spy="scroll" data-taget=".page-menu">
-  <nav class="navbar navbar-default navbar-webmaker">
-  <div class="container">
+<body>
+<div class="sticky">
+    <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">Your First Month as a Club Captain Guide</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li class="hidden-xs"><a href="https://www.mozilla.org/" id="tabzilla">mozilla</a></li>
-    </ul>
-  </div>
-</nav>
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="#" data-reveal-id="readingOptions"><i class="fa fa-cogs fa-lg"></i></a></li>
+                <li class="has-dropdown">
+                    <a href="#">Table of Contents</a>
+                    <ul id="toc" class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-<main>
-  <article>
-    <header class="jumbotron">
-      <div class="container">
+
+        </section>
+    </nav>
+</div>
+
+<!-- Reading options -->
+<div id="readingOptions" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">Reading Options</h2>
+    <form>
         <div class="row">
-          <div class="col-md-12 title">
-            <h1>Your First Month as a Club Captain</h1>
-          </div>
+            <div class="medium-6 columns">
+                <h3>Font family</h3>
+                <input type="radio" name="fontFamilySelector" value="text-opensans" checked>Open Sans</input><br>
+                <input type="radio" name="fontFamilySelector"  value="text-droidsans">Droid Sans</input><br>
+                <input type="radio" name="fontFamilySelector"  value="text-firasans">Fira Sans</input><br>
+                <input type="radio" name="fontFamilySelector"  value="text-times">Times New Roman</input><br>
+            </div>
+            <div class="medium-6 columns">
+                <h3>Font size</h3>
+                <input type="radio" name="fontSizeSelector" value="text-small">Small</input><br>
+                <input type="radio" name="fontSizeSelector"  value="text-normal" checked>Normal</input><br>
+                <input type="radio" name="fontSizeSelector"  value="text-large">Large</input><br>
+            </div>
         </div>
-      </div>
-    </header>
+    </form>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
-    <div class="container" id="guide"></div>
+<!-- End of Reading Options -->
 
-  </article>
-</main>
-
-<footer class="wm-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12 footer-license">
-        <p>
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img style="padding-bottom:10px;" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><strong>Mozilla Clubs Fact Sheet</strong></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="#" property="cc:attributionName" rel="cc:attributionURL">Mozilla Learning Network</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-        </p>
-      </div>
-
-      <div class="col-md-2 col-sm-3 col-xs-12 col-md-offset-4 footer-links">
-        <ul>
-          <li><i class="fa fa-twitter"></i><a href="https://twitter.com/mozteach"> @mozteach</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-2 col-sm-3 col-xs-12 footer-links">
-        <ul>
-          <li><a href="https://teach.mozilla.org/about/">Mozilla Learning Networks</a></li>
-        </ul>
-      </div>
+<div class="row">
+    <div class="small-12 columns">
+        <div id="guide" class="text-opensans"></div>
     </div>
-  </div>
-</footer>
+</div>
+
 
 <!-- scripts -->
-<script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script>
-  // Disable tabzilla easteregg
-  Tabzilla.disableEasterEgg();
 
-  // fix the page menu position when scrolling
-  $( '#page-menu' ).affix({
-    offset: {
-      top: $( '#page-menu' ).offset().top,
-      bottom: $( 'main > article > footer' ).outerHeight( true ) + $( 'body > footer' ).outerHeight( true )
-    }
-  });
-
-  // scroll to internal links rather than jump
-  // (external links are not affected by this)
-  $( 'a' ).on( 'click', function() {
-    $( 'html, body' ).animate({
-      scrollTop: $( $.attr( this, 'href' ) ).offset().top
-    }, 700 );
-
-    return false;
-  });
-</script>
-    <script src="meta-marked.js"></script>
-    <script src="app.js"></script>
+<script src="meta-marked.js"></script>
+<script src="markdown-toc.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
