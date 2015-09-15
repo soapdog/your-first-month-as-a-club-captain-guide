@@ -49,6 +49,10 @@
         $('#readingOptions').foundation('reveal', 'close');
     }
 
+    function closeTOCDialog() {
+        $('#tableOfContents').foundation('reveal', 'close');
+    }
+
 
     function changeGuideFont(event) {
         var fontFamily = event.target.value;
@@ -84,9 +88,10 @@
         closeReadingOptionsDialog();
     }
 
-    // Bind reading options controls
+    // Bind reading options and toc controls
     $("input[name='fontFamilySelector']").change(changeGuideFont);
     $("input[name='fontSizeSelector']").change(changeGuideFontSize);
+    $("#toc").click(closeTOCDialog);
 
 
 
