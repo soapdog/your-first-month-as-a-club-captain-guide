@@ -1,27 +1,43 @@
 (function() {
 
-    // Used to hold information from aside.md and activity.md
+    // Used to hold information from markdown
     var data = {
         content: {}
     };
 
-    // Builds the left sidebar
+    // Builds the guide content
     function bindGuideData() {
         var source = $("#guide-template").html();
         var template = Handlebars.compile(source);
 
         console.log("Loading guide.md markdown file...");
 
-        function successfulyLoadedMarkdownFile(markdownData) {
-            var asideData = metaMarked(markdownData);
+        // New markdown renderer tweaks
+        var renderer = new marked.Renderer();
+        var paragraphCounter = 0;
 
-            data.content = asideData.html;
+        renderer.paragraph = function(text) {
+            var paragraphId = "para" + paragraphCounter;
+
+            paragraphCounter += 1;
+
+            return "<p class='has-marker' id='" +paragraphId+ "'>"
+                + text
+                + " <a href='#"+paragraphId+"' class='paragraph-marker'>&para;</a><p>";
+        };
+
+        function successfulyLoadedMarkdownFile(markdownData) {
+            var content = metaMarked(markdownData, { renderer: renderer });
+
+            data.content = content.html;
 
             console.log("Binding guide data...");
 
             $("#guide").html(template(data));
 
             bindTOC();
+
+            setTimeout(scrollToParagraph, 200);
 
         }
 
@@ -32,6 +48,17 @@
             success: successfulyLoadedMarkdownFile
         });
 
+    }
+
+    function scrollToParagraph() {
+        console.log("scrolling to:", location.hash);
+        if (!window.location.hash) {
+            return;
+        }
+
+        var position = $(location.hash)[0].offsetTop - 100;
+
+        window.scrollTo(0, position);
     }
 
     function bindTOC() {
@@ -132,7 +159,7 @@
     });
 
     // Load foundation
-    $(document).foundation();
+    $(document).foundation()
 
     // Load main content area and start the app.
     bindGuideData();

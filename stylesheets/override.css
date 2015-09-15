@@ -8,7 +8,7 @@ section.top-bar-section ul li a {
 }
 
 #guide {
-    margin-top: 3rem;
+    top: 3rem;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -84,4 +84,18 @@ section.top-bar-section ul li a {
     font-style: italic;
     color: black;
     padding-left: 10px;
+}
+
+.paragraph-marker {
+    display: inline;
+    font-size: small;
+    color: lightgrey;
+}
+
+.paragraph-marker:hover {
+    color: black;
+}
+
+.has-marker:target {
+    background-color: lightgoldenrodyellow;
 }
