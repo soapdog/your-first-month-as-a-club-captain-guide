@@ -1,3 +1,5 @@
+![Imgur](http://i.imgur.com/LWGqCAS.png?1)
+
 # Welcome Club Captain!
 
 Thanks for your interest in being a Mozilla Club Captain and hosting a Mozilla Club for your local community.
